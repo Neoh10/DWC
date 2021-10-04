@@ -8,4 +8,4 @@ let y = 10;
 let b = (x>y);
 console.log (b);
 
-/*  */
+/* */
