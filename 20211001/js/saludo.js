@@ -1,0 +1,1 @@
+document.write("Hola desde un archivo externo en el navegador");
