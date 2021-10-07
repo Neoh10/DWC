@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura de número</title>
+</head>
+
+<body>
+    <form name="formulario" onsubmit="checkNum()">
+        <p>Introduce un número: <input id="num" type="text" name="num"></p>
+        <input type="submit" value="Enviar">
+        </p>
+    </form>
+    <script>
+        function checkNum() {
+            var x = document.getElementById("num").value;
+            if (isNaN(x)) {
+                alert("No es un número");
+            } else {
+                alert("Es un número");
+            }
+        }
+    </script>
+</body>
+
+</html>
