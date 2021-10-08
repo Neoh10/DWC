@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities Unit 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akronim&family=Explora&family=Gemunu+Libre:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .p0 {
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .p1 {
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: 2rem;
+        }
+
+        .p2 {
+            font-family: 'Akronim', cursive;
+            font-size: 2rem;
+        }
+
+        .p3 {
+            font-family: 'Explora', cursive;
+            font-size: 2rem;
+        }
+
+        .ej1 {
+            margin-left: 40px;
+        }
+
+        a {
+            font-size: 2rem;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        ul,
+        ol,
+        dl {
+            font-size: 1.5rem;
+        }
+
+        #test {
+            width: 100px;
+            height: 100px;
+            margin: 0px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="p0">1. A paragraph shown with three different Google fonts (https://fonts.google.com/) using inline
+        styles.</p>
+    <div class="ej1">
+        <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo neque quis temporibus dignissimos
+            earum, voluptatem perferendis vel. Amet, delectus aspernatur?</p>
+
+        <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam veniam rerum cum assumenda
+            nesciunt officiis quis! Autem, aliquam veniam! Quisquam veniam recusandae delectus consequatur inventore
+            natus dolores vitae alias.</p>
+
+        <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo quaerat aperiam voluptatem,
+            qui quis nobis praesentium dolores perspiciatis dignissimos?</p>
+    </div>
+
+    <p class="p0">2. Two links (one opens in a new window)</p>
+    <div class="ej1">
+        <a href="https://www.google.com">Link</a>
+        <br>
+        <a href="https://www.google.com/" target="_blank">Link in a new window</a>
+    </div>
+    <br>
+    <p class="p0">3. A table (3 rows x 4 columns)</p>
+    <br>
+    <div class="ej1">
+        <table>
+            <tr>
+                <th>Asignatura</th>
+                <th>Profesor</th>
+                <th>Aula</th>
+                <th>Hora</th>
+            </tr>
+            <tr>
+                <td>DIW</td>
+                <td>S Janer</td>
+                <td>A20</td>
+                <td>17:05</td>
+            </tr>
+            <tr>
+                <td>DWC</td>
+                <td>B Laserna</td>
+                <td>A20</td>
+                <td>19:05</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <p class="p0">4. Three different types of lists</p>
+    <div class="ej1">
+        <ul>
+            <li>NVidia</li>
+            <li>AMD</li>
+            <li>Intel</li>
+        </ul>
+
+        <ol>
+            <li>Alonso</li>
+            <li>Verstappen</li>
+            <li>Hamilton</li>
+        </ol>
+
+        <dl>
+            <dt>NVidia</dt>
+            <dd>GPU manufacturer</dd>
+            <dt>Intel</dt>
+            <dd>Chip manufacturer</dd>
+        </dl>
+    </div>
+
+    <p class="p0">5. An image</p>
+    <div class="ej1">
+        <img src="contrast2.png" alt="Image">
+    </div>
+
+    <p class="p0">6. A meter</p>
+    <div class="ej1">
+        <label>Loading page:</label>
+        <meter value="0.6">60%</meter>
+    </div>
+    <br>
+
+    <p class="p0">7. An audio</p>
+    <div class="ej1">
+        <audio controls>
+            <source src="file_example_MP3_700KB.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <br>
+
+    <p class="p0">8. A video</p>
+    <div class="ej1">
+        <video width="640" height="360" controls>
+            <source src="file_example_MP4_1280_10MG.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br>
+
+    <p class="p0">9. A canvas</p>
+    <br>
+    <div class="ej1">
+        <canvas id="myCanvas"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+    </div>
+    <br>
+    <p class="p0">10. A context menu</p>
+    <div class="ej1">
+        <div contextmenu="share">
+            <menu type="context" id="share">
+                <menu label="share">
+                  <menuitem label="Twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Hurra! Estos aprendiendo sobre ContextMenuI en MDN a través de Mozilla ');"></menuitem>
+                  <menuitem label="Facebook" onclick="window.open('https://facebook.com/sharer/sharer.php?u=https://https://developer.mozilla.org/en/HTML/Element/Using_HTML_context_menus');"></menuitem>
+                </menu>
+              </menu>
+              <ol>
+                <li>En cualquier parte del ejemplo puedes compartir la página en twitter y Facebook usando el menú de compartir de tu menú contextual.</li>
+                <li><pre contextmenu="changeFont" id="fontSizing">En este elemento específico de la lista , puedes cambiar el tamaño del texto usando  las acciones "Incremenrar/Decrementar" de tu menú contextual ./pre></li>
+                <menu type="context" id="changeFont">
+                  <menuitem label="Increase Font" onclick="incFont()"></menuitem>
+                  <menuitem label="Decrease Font" onclick="decFont()"></menuitem>
+                </menu>
+                <li contextmenu="ChangeImage" id="changeImage">En la imagen de abajo , puedes accionar la accion "Cambio de Imagen " en tu menú contextual .</li><br />
+                <img src="https://developer.mozilla.org/media/img/promote/promobutton_mdn5.png" contextmenu="ChangeImage" id="promoButton" />
+                <menu type="context" id="ChangeImage">
+                  <menuitem label="Change Image" onclick="changeImage()"></menuitem>
+                </menu>
+              </ol>
+
+        </div>
+    </div>
+</body>
+
+</html>
