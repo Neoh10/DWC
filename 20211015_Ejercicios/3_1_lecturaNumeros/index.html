@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lectura de número</title>
+</head>
+<body>
+    <script>
+        /* Definición de variables */
+        var respuesta;
+
+        /* Solicitud del número al usuario */
+        respuesta = prompt("Dame un número, por favor:");
+
+        /* Comprobación de la respuesta */
+        if (isNaN(Number(respuesta))) {
+            alert("La respuesta no es un número");
+        } else {
+            alert (`Muchas gracias. Tu respuesta es: ${respuesta}`);
+        }
+
+    </script>
+</body>
+</html>
